@@ -1,24 +1,24 @@
-/* ---------- Theme: blush white with a hint of rose. All colors live here. ---------- */
+/* ---------- Theme: soft blush with a hint of rose. All colors live here. ---------- */
 :root {
-  --bg: #fff9f9; /* white with a pink tinge */
+  --bg: #fffafa; /* white with a pink tinge */
   --surface: #ffffff; /* modals */
-  --tile: #fbeef0; /* blush tile */
-  --tile-hover: #f7e0e5;
-  --tile-used: #fdf6f7;
-  --rule: rgb(74 38 50 / 0.1); /* hairlines */
-  --rule-strong: rgb(74 38 50 / 0.2);
-  --text: #4a2632; /* deep plum ink */
-  --text-muted: #8c6b75;
-  --text-faint: #c3a7af;
-  --text-used: #ead7dc;
-  --rose: #c56b80; /* accent */
-  --rose-deep: #a94f66; /* primary buttons, tile values */
-  --rose-deeper: #8f3f55;
-  --rose-gold: #b97a5f; /* winner on the final screen */
+  --tile: #fcf1f3; /* blush tile */
+  --tile-hover: #f9e7eb;
+  --tile-used: #fefafa;
+  --rule: rgb(110 72 84 / 0.08); /* hairlines */
+  --rule-strong: rgb(110 72 84 / 0.15);
+  --text: #644550; /* soft plum ink */
+  --text-muted: #a38892;
+  --text-faint: #d2bcc3;
+  --text-used: #efe2e5;
+  --rose: #d699a6; /* accent */
+  --rose-deep: #bf7d8e; /* primary buttons, tile values */
+  --rose-deeper: #ab6a7c;
+  --rose-gold: #c49580; /* winner on the final screen */
 
   --serif: 'Cormorant Garamond', Garamond, Georgia, serif;
   --sans: 'Jost Variable', 'Futura', system-ui, sans-serif;
-  --radius: 0.8vh;
+  --radius: 1.4vh;
   --fast: 160ms;
 
   font-family: var(--sans);
@@ -319,7 +319,7 @@ sup {
 }
 .topbar__title {
   font-size: 1.6vh;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -391,7 +391,7 @@ sup {
   max-height: 100%;
   font-family: var(--serif);
   font-size: 3.1vh;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   text-align: center;
   overflow: hidden;
@@ -406,7 +406,7 @@ sup {
   color: var(--rose-deep);
   font-family: var(--serif);
   font-size: 7.4vh;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.01em;
   font-variant-numeric: lining-nums;
   transition:
@@ -445,14 +445,15 @@ sup {
   content: '';
   position: absolute;
   top: -1px;
-  left: 30%;
-  right: 30%;
-  height: 2px;
+  left: 34%;
+  right: 34%;
+  height: 3px;
+  border-radius: 3px;
   background: var(--rose);
 }
 .score__label {
   font-size: 1.4vh;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--rose);
@@ -474,7 +475,7 @@ sup {
 .score__value {
   font-family: var(--serif);
   font-size: 7.4vh;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.05;
   font-variant-numeric: tabular-nums lining-nums;
 }
@@ -504,13 +505,13 @@ sup {
   font-style: normal;
   margin-left: 1.4vw;
   color: var(--rose-deep);
-  font-weight: 600;
+  font-weight: 500;
 }
 .answering {
   white-space: nowrap;
   font-family: var(--serif);
   font-size: 4vh;
-  font-weight: 600;
+  font-weight: 500;
 }
 .answering__label {
   font-family: var(--sans);
@@ -523,7 +524,7 @@ sup {
   vertical-align: 0.3em;
 }
 .answering strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 .clue__body {
   display: flex;
@@ -547,7 +548,7 @@ sup {
   max-height: 100%;
   object-fit: contain;
   border-radius: var(--radius);
-  box-shadow: 0 1vh 4vh rgb(74 38 50 / 0.12);
+  box-shadow: 0 1.5vh 5vh rgb(110 72 84 / 0.08);
 }
 .clue__question {
   margin: 0;
@@ -566,7 +567,7 @@ sup {
   max-width: 90vw;
   font-family: var(--serif);
   font-size: 10.5vh;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -0.01em;
   text-wrap: balance;
@@ -679,7 +680,7 @@ sup {
   display: block;
   font-family: var(--serif);
   font-size: 5.2vh;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.1;
   white-space: nowrap;
   overflow: hidden;
@@ -777,7 +778,7 @@ sup {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgb(74 38 50 / 0.28);
+  background: rgb(110 72 84 / 0.18);
   backdrop-filter: blur(4px);
   display: grid;
   place-items: center;
@@ -790,7 +791,7 @@ sup {
   background: var(--surface);
   border: 1px solid var(--rule);
   border-radius: calc(var(--radius) * 2);
-  box-shadow: 0 2vh 6vh rgb(74 38 50 / 0.18);
+  box-shadow: 0 2vh 7vh rgb(110 72 84 / 0.12);
   padding: 3.2vh;
   font-size: 2.1vh;
   line-height: 1.5;

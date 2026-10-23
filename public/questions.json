@@ -4,11 +4,11 @@
     {
       "name": "Flags",
       "tiles": [
-        { "value": 100, "question": "Name the country.", "answer": "Japan", "questionImage": "/images/flags-100-q.png", "answerImage": "/images/flags-100-a.png", "funFact": "The red disc represents the sun." },
-        { "value": 200, "question": "Name the country.", "answer": "Italy", "questionImage": "/images/flags-200-q.png", "answerImage": "/images/flags-200-a.png", "accept": "Not Ireland: Ireland is green, white, orange." },
-        { "value": 300, "question": "Name the country.", "answer": "Germany", "questionImage": "/images/flags-300-q.png" },
-        { "value": 400, "question": "Name the country.", "answer": "Sweden", "questionImage": "/images/flags-400-q.png", "answerImage": "/images/flags-400-a.png", "accept": "Not Finland: Finland is a blue cross on white." },
-        { "value": 500, "question": "Name the country.", "answer": "Mauritius", "questionImage": "/images/flags-500-q.png" }
+        { "value": 100, "question": "Name the country.", "answer": "Japan", "funFact": "The red disc represents the sun." },
+        { "value": 200, "question": "Name the country.", "answer": "Italy", "accept": "Not Ireland: Ireland is green, white, orange." },
+        { "value": 300, "question": "Name the country.", "answer": "Germany" },
+        { "value": 400, "question": "Name the country.", "answer": "Sweden", "accept": "Not Finland: Finland is a blue cross on white." },
+        { "value": 500, "question": "Name the country.", "answer": "Mauritius" }
       ]
     },
     {
@@ -25,7 +25,7 @@
       "name": "Science",
       "tiles": [
         { "value": 100, "question": "Which planet is known as the Red Planet?", "answer": "Mars" },
-        { "value": 200, "question": "What shape is each cell of a honeycomb?", "answer": "Hexagon", "answerImage": "/images/science-200-a.png", "funFact": "Hexagons tile a surface using the least wax for the space they enclose." },
+        { "value": 200, "question": "What shape is each cell of a honeycomb?", "answer": "Hexagon", "funFact": "Hexagons tile a surface using the least wax for the space they enclose." },
         { "value": 300, "question": "What is the chemical symbol for gold?", "answer": "Au", "funFact": "From the Latin aurum." },
         { "value": 400, "question": "How many bones are in the adult human body?", "answer": "206" },
         { "value": 500, "question": "Which gas makes up about 78% of Earth's atmosphere?", "answer": "Nitrogen", "accept": "Oxygen is only about 21%." }

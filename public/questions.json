@@ -117,43 +117,44 @@
       "tiles": [
         {
           "value": 100,
-          "question": "Name the company from its old logo.",
+          "question": "Name the company from its first logo.",
           "answer": "Starbucks",
           "questionImage": "/images/logos-100-q.png",
           "answerImage": "/images/logos-100-a.png",
-          "funFact": "The original logo was a brown, full-body siren."
+          "funFact": "The original 1971 logo: a two-tailed siren."
         },
         {
           "value": 200,
-          "question": "Name the company from its old logo.",
-          "answer": "Pepsi",
+          "question": "Name the company from its first logo.",
+          "answer": "UPS",
           "questionImage": "/images/logos-200-q.png",
           "answerImage": "/images/logos-200-a.png",
-          "funFact": "Its early red script looked a lot like Coke's."
+          "funFact": "The 1916 eagle is carrying a package. The shield is still in today's logo."
         },
         {
           "value": 300,
-          "question": "Name the company from its old logo.",
-          "answer": "Twitter",
+          "question": "Name the company from its first logo.",
+          "answer": "Adidas",
           "questionImage": "/images/logos-300-q.png",
           "answerImage": "/images/logos-300-a.png",
-          "funFact": "The bird was named Larry, after Larry Bird."
+          "funFact": "The Dassler brothers split in 1948: Adi founded Adidas, Rudolf founded Puma.",
+          "accept": "Accept Adidas or Puma"
         },
         {
           "value": 400,
-          "question": "Name the company from its old logo.",
-          "answer": "Nike",
+          "question": "Name the company from its first logo.",
+          "answer": "Pepsi",
           "questionImage": "/images/logos-400-q.png",
           "answerImage": "/images/logos-400-a.png",
-          "funFact": "A college student designed the swoosh for $35."
+          "funFact": "Pharmacist Caleb Bradham called it Brad's Drink in 1893. It became Pepsi-Cola in 1898."
         },
         {
           "value": 500,
-          "question": "Name the company from its old logo.",
-          "answer": "Apple",
+          "question": "Name the company from its first logo.",
+          "answer": "BMW",
           "questionImage": "/images/logos-500-q.png",
           "answerImage": "/images/logos-500-a.png",
-          "funFact": "The first logo showed Isaac Newton under a tree."
+          "funFact": "BMW grew out of Rapp Motorenwerke, founded in Munich in 1913."
         }
       ]
     },

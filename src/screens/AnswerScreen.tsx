@@ -6,7 +6,6 @@ interface Props {
   tile: TileData;
   teams: Team[];
   answering: number;
-  tried: number[];
   nextTeam: number | null;
   showAccept: boolean;
   onAward: (team: number) => void;
@@ -16,7 +15,7 @@ interface Props {
 }
 
 export default function AnswerScreen(props: Props) {
-  const { category, tile, teams, answering, tried, nextTeam, showAccept } = props;
+  const { category, tile, teams, answering, nextTeam, showAccept } = props;
   // Fall back to the question image when there is no separate reveal image.
   const image = tile.answerImage ?? tile.questionImage;
 
@@ -24,10 +23,13 @@ export default function AnswerScreen(props: Props) {
     <div className="screen clue">
       <header className="clue__head">
         <div className="clue__cat">
-          {category} <span className="clue__value">${tile.value}</span>
+          {category} <span className="clue__value">
+            <sup>$</sup>
+            {tile.value}
+          </span>
         </div>
         <div className="answering">
-          Answering: <strong>{teams[answering].name}</strong>
+          <span className="answering__label">Answering</span> <strong>{teams[answering].name}</strong>
         </div>
       </header>
 
@@ -61,13 +63,13 @@ export default function AnswerScreen(props: Props) {
           {teams.map((t, i) => (
             <button
               key={i}
-              className={`btn btn--host${tried.includes(i) ? '' : ' btn--untried'}`}
+              className="link link--team"
               onClick={() => props.onAward(i)}
             >
               <kbd>{i + 1}</kbd> {t.name}
             </button>
           ))}
-          <button className="btn btn--host" onClick={props.onBack} title="Return without using this tile">
+          <button className="link" onClick={props.onBack} title="Return without using this tile">
             Back to board <kbd>Esc</kbd>
           </button>
           {tile.accept && <span className="override__hint">H: host note</span>}

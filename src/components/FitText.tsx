@@ -29,7 +29,8 @@ export default function FitText({
         box.clientHeight - parseFloat(boxStyle.paddingTop) - parseFloat(boxStyle.paddingBottom);
       const min = 8;
       const overflows = () =>
-        el.scrollHeight > Math.min(avail, size * lineRatio * maxLines) + 1 ||
+        // Half a line of slack: tall glyphs can poke past the line box without adding a line.
+        el.scrollHeight > Math.min(avail, size * lineRatio * (maxLines + 0.5)) ||
         el.scrollWidth > el.clientWidth + 1;
       while (size > min && overflows()) {
         size -= 1;

@@ -223,7 +223,6 @@ export default function App() {
           tile={openTile!}
           teams={state.teams}
           answering={open!.answering}
-          tried={open!.tried}
           nextTeam={nextUntried(state)}
           showAccept={showAccept}
           onAward={award}

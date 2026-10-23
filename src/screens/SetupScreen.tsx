@@ -16,11 +16,19 @@ interface Props {
 
 const MIN_TEAMS = 2;
 const MAX_TEAMS = 4;
+const DEFAULT_NAMES = ['Team 1', 'Team 2', 'Team 3', 'Team 4'];
+const isDefaultName = (name: string) => /^team \d+$/i.test(name.trim());
+
+/** Remove a team, renumbering any names still left at their "Team N" default. */
+const removeAt = (names: string[], index: number) =>
+  names
+    .filter((_, i) => i !== index)
+    .map((n, i) => (isDefaultName(n) ? `Team ${i + 1}` : n));
 
 export default function SetupScreen(props: Props) {
   const { title, missingImages, saved, totalTiles, onResume, onDiscardSaved, onStart } = props;
   const [names, setNames] = useState<string[]>(
-    props.initialNames.length >= MIN_TEAMS ? props.initialNames : ['', ''],
+    props.initialNames.length >= MIN_TEAMS ? props.initialNames : DEFAULT_NAMES,
   );
   const [confirmNew, setConfirmNew] = useState(false);
 
@@ -31,7 +39,10 @@ export default function SetupScreen(props: Props) {
 
   return (
     <div className="screen setup">
-      <h1 className="setup__title">{title}</h1>
+      <header className="setup__head">
+        <p className="eyebrow">House party edition</p>
+        <h1 className="setup__title">{title}</h1>
+      </header>
 
       {missingImages.length > 0 && (
         <div className="warning" role="alert">
@@ -79,24 +90,23 @@ export default function SetupScreen(props: Props) {
             start();
           }}
         >
-          <p className="setup__lede">Enter teams in pick order.</p>
+          <p className="setup__lede">Teams, in the order they pick</p>
           {names.map((name, i) => (
             <div className="setup__row" key={i}>
-              <span className="setup__num">{i + 1}</span>
+              <span className="setup__num">{i + 1}.</span>
               <input
                 className="input"
                 value={name}
                 placeholder={`Team ${i + 1}`}
                 maxLength={24}
-                autoFocus={i === 0}
                 onChange={(e) => setName(i, e.target.value)}
               />
               {names.length > MIN_TEAMS && (
                 <button
                   type="button"
-                  className="btn btn--ghost"
+                  className="link"
                   aria-label={`Remove team ${i + 1}`}
-                  onClick={() => setNames((n) => n.filter((_, j) => j !== i))}
+                  onClick={() => setNames((n) => removeAt(n, i))}
                 >
                   Remove
                 </button>
@@ -108,7 +118,7 @@ export default function SetupScreen(props: Props) {
               <button
                 type="button"
                 className="btn btn--secondary"
-                onClick={() => setNames((n) => [...n, ''])}
+                onClick={() => setNames((n) => [...n, `Team ${n.length + 1}`])}
               >
                 Add team
               </button>

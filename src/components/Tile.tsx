@@ -12,7 +12,8 @@ export default function Tile({ value, used, onPick }: Props) {
       onClick={onPick}
       aria-label={used ? `$${value}, used` : `$${value}`}
     >
-      ${value}
+      <sup>$</sup>
+      {value}
     </button>
   );
 }

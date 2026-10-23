@@ -46,14 +46,17 @@ export default function BoardScreen({ questions, state, canUndo, onPick, onUndo,
     <div className="screen board-screen">
       <header className="topbar">
         <div className="topbar__title">{questions.title}</div>
+        <div className="topbar__meta">
+          {state.used.length} of {cats.reduce((n, c) => n + c.tiles.length, 0)} played
+        </div>
         <div className="host-controls">
-          <button className="btn btn--host" onClick={onUndo} disabled={!canUndo} title="Ctrl+Z">
+          <button className="link" onClick={onUndo} disabled={!canUndo} title="Ctrl+Z">
             Undo
           </button>
-          <button className="btn btn--host" onClick={onAdjust}>
+          <button className="link" onClick={onAdjust}>
             Adjust scores
           </button>
-          <button className="btn btn--host" onClick={onReset}>
+          <button className="link" onClick={onReset}>
             Reset game
           </button>
         </div>
@@ -63,12 +66,17 @@ export default function BoardScreen({ questions, state, canUndo, onPick, onUndo,
         className="board"
         style={{ '--cols': cats.length, '--rows': rows } as CSSProperties}
       >
-        {cats.map((cat, c) => (
-          <div className="cat" key={`cat-${c}`}>
-            <FitText className="cat__name" text={cat.name} />
-          </div>
-        ))}
-        {cells}
+        <div className="board__head">
+          {cats.map((cat, c) => (
+            <div className="cat" key={`cat-${c}`}>
+              <div className="cat__num">{String(c + 1).padStart(2, '0')}</div>
+              <div className="cat__box">
+                <FitText className="cat__name" text={cat.name} />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="board__grid">{cells}</div>
       </div>
 
       <Scoreboard teams={state.teams} highlight={state.pickIndex} label="Your pick" />

@@ -14,10 +14,13 @@ export default function QuestionScreen({ category, tile, answeringTeam, onReveal
     <div className="screen clue">
       <header className="clue__head">
         <div className="clue__cat">
-          {category} <span className="clue__value">${tile.value}</span>
+          {category} <span className="clue__value">
+            <sup>$</sup>
+            {tile.value}
+          </span>
         </div>
         <div className="answering">
-          Answering: <strong>{answeringTeam}</strong>
+          <span className="answering__label">Answering</span> <strong>{answeringTeam}</strong>
         </div>
       </header>
 

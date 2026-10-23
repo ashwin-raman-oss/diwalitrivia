@@ -15,7 +15,7 @@ export default function FinalScreen({ title, teams, onReview, onNewGame }: Props
 
   return (
     <div className="screen final">
-      <p className="final__eyebrow">{title}</p>
+      <p className="eyebrow">{title} · Final standings</p>
       <h1 className="final__title">Thanks for playing</h1>
       <p className="final__winner">
         {winners.length > 1 ? (
@@ -32,7 +32,7 @@ export default function FinalScreen({ title, teams, onReview, onNewGame }: Props
       <ol className="final__list">
         {ranked.map((t, i) => (
           <li key={i} className={t.score === top ? 'final__row final__row--win' : 'final__row'}>
-            <span className="final__rank">{ranked.findIndex((r) => r.score === t.score) + 1}</span>
+            <span className="final__rank">{ranked.findIndex((r) => r.score === t.score) + 1}.</span>
             <span className="final__name">{t.name}</span>
             <span className="final__score">{money(t.score)}</span>
           </li>

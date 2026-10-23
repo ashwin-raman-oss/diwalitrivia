@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import type { QuestionSet, Store } from './types';
 import { assetUrl } from './types';
-import { gameReducer, newGame, nextUntried } from './state/gameReducer';
+import { gameReducer, newGame } from './state/gameReducer';
 import type { Action } from './state/gameReducer';
 import { clearGame, loadGame, saveGame } from './state/storage';
 import SetupScreen from './screens/SetupScreen';
@@ -78,7 +78,7 @@ export default function App() {
   const open = state.open;
   const openTile = open && questions ? questions.categories[open.cat]?.tiles[open.tile] : null;
 
-  // Hide the host note whenever a different tile or team comes up.
+  // Hide the host note whenever a different tile comes up.
   useEffect(() => setShowAccept(false), [open?.cat, open?.tile]);
 
   const totalTiles = questions?.categories.reduce((n, c) => n + c.tiles.length, 0) ?? 0;
@@ -137,7 +137,6 @@ export default function App() {
     } else if (screen === 'answer' && open) {
       const n = Number(key);
       if (n >= 1 && n <= state.teams.length) return handled(), award(n - 1);
-      if (key === 'w') return handled(), act({ type: 'pass' });
       if (key === 'n') return handled(), act({ type: 'noOne' });
       if (key === 'h') return handled(), setShowAccept((s) => !s);
       if (key === 'escape') return handled(), act({ type: 'back' });
@@ -209,7 +208,7 @@ export default function App() {
           key={`q-${open!.cat}-${open!.tile}`}
           category={questions.categories[open!.cat].name}
           tile={openTile!}
-          answeringTeam={state.teams[open!.answering].name}
+          answeringTeam={state.teams[state.pickIndex].name}
           onReveal={() => act({ type: 'reveal' })}
           onBack={() => act({ type: 'back' })}
         />
@@ -222,11 +221,8 @@ export default function App() {
           category={questions.categories[open!.cat].name}
           tile={openTile!}
           teams={state.teams}
-          answering={open!.answering}
-          nextTeam={nextUntried(state)}
           showAccept={showAccept}
           onAward={award}
-          onPass={() => act({ type: 'pass' })}
           onNoOne={() => act({ type: 'noOne' })}
           onBack={() => act({ type: 'back' })}
         />

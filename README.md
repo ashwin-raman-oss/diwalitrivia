@@ -26,8 +26,7 @@ about 20 characters) so they stay large on the board.
 | Key | Action |
 |---|---|
 | Space | Reveal answer |
-| 1-4 | Award points to team 1-4 (answer screen) |
-| W | Wrong, pass to next team |
+| 1-4 | Team 1-4 got it (answer screen) |
 | N | No one got it |
 | Esc | Back to board (tile stays unused) |
 | H | Show/hide host accept note |

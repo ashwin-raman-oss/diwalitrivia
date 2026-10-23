@@ -5,17 +5,14 @@ interface Props {
   category: string;
   tile: TileData;
   teams: Team[];
-  answering: number;
-  nextTeam: number | null;
   showAccept: boolean;
   onAward: (team: number) => void;
-  onPass: () => void;
   onNoOne: () => void;
   onBack: () => void;
 }
 
 export default function AnswerScreen(props: Props) {
-  const { category, tile, teams, answering, nextTeam, showAccept } = props;
+  const { category, tile, teams, showAccept } = props;
   // Fall back to the question image when there is no separate reveal image.
   const image = tile.answerImage ?? tile.questionImage;
 
@@ -28,8 +25,11 @@ export default function AnswerScreen(props: Props) {
             {tile.value}
           </span>
         </div>
-        <div className="answering">
-          <span className="answering__label">Answering</span> <strong>{teams[answering].name}</strong>
+        <div className="clue__links">
+          {tile.accept && <span className="clue__hint">H · host note</span>}
+          <button className="link" onClick={props.onBack} title="Return without using this tile">
+            Back to board <kbd>Esc</kbd>
+          </button>
         </div>
       </header>
 
@@ -44,35 +44,19 @@ export default function AnswerScreen(props: Props) {
         )}
       </main>
 
-      <footer className="clue__footer">
-        <div className="clue__actions">
-          <button className="btn btn--primary btn--big" onClick={() => props.onAward(answering)}>
-            Correct <kbd>{answering + 1}</kbd>
-          </button>
-          {nextTeam !== null && (
-            <button className="btn btn--secondary btn--big" onClick={props.onPass}>
-              Wrong, pass to {teams[nextTeam].name} <kbd>W</kbd>
-            </button>
-          )}
-          <button className="btn btn--secondary btn--big" onClick={props.onNoOne}>
-            No one got it <kbd>N</kbd>
-          </button>
-        </div>
-        <div className="override">
-          <span className="override__label">Award to</span>
+      <footer className="award">
+        <p className="award__label">Who got it?</p>
+        <div className="award__row">
           {teams.map((t, i) => (
-            <button
-              key={i}
-              className="link link--team"
-              onClick={() => props.onAward(i)}
-            >
-              <kbd>{i + 1}</kbd> {t.name}
+            <button key={i} className="award__btn" onClick={() => props.onAward(i)}>
+              <kbd>{i + 1}</kbd>
+              <span className="award__name">{t.name}</span>
             </button>
           ))}
-          <button className="link" onClick={props.onBack} title="Return without using this tile">
-            Back to board <kbd>Esc</kbd>
+          <button className="award__btn award__btn--none" onClick={props.onNoOne}>
+            <kbd>N</kbd>
+            <span className="award__name">No one got it</span>
           </button>
-          {tile.accept && <span className="override__hint">H: host note</span>}
         </div>
       </footer>
     </div>

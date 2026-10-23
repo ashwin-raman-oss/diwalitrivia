@@ -8,7 +8,6 @@ export type Action =
   | { type: 'reveal' }
   | { type: 'back' }
   | { type: 'award'; team: number; value: number }
-  | { type: 'pass' }
   | { type: 'noOne' }
   | { type: 'adjust'; team: number; delta: number }
   | { type: 'review' }
@@ -26,20 +25,6 @@ export function newGame(teamNames: string[]): Store {
     },
     history: [],
   };
-}
-
-/**
- * Next team in rotation after the one answering that has not tried yet,
- * or null when every team has had a go.
- */
-export function nextUntried(state: GameState): number | null {
-  const { open, teams } = state;
-  if (!open) return null;
-  for (let step = 1; step < teams.length; step++) {
-    const i = (open.answering + step) % teams.length;
-    if (!open.tried.includes(i)) return i;
-  }
-  return null;
 }
 
 /** Close the open tile and hand the pick to the team after the picker. */
@@ -60,13 +45,7 @@ function apply(state: GameState, action: Exclude<Action, { type: 'undo' | 'load'
       if (state.open || state.used.includes(tileKey(action.cat, action.tile))) return null;
       return {
         ...state,
-        open: {
-          cat: action.cat,
-          tile: action.tile,
-          answering: state.pickIndex,
-          tried: [state.pickIndex],
-          revealed: false,
-        },
+        open: { cat: action.cat, tile: action.tile, revealed: false },
       };
     }
     case 'reveal':
@@ -82,14 +61,6 @@ function apply(state: GameState, action: Exclude<Action, { type: 'undo' | 'load'
         teams: state.teams.map((t, i) =>
           i === action.team ? { ...t, score: t.score + action.value } : t,
         ),
-      };
-    }
-    case 'pass': {
-      const next = nextUntried(state);
-      if (!state.open || next === null) return null;
-      return {
-        ...state,
-        open: { ...state.open, answering: next, tried: [...state.open.tried, next] },
       };
     }
     case 'noOne':
@@ -109,7 +80,7 @@ function apply(state: GameState, action: Exclude<Action, { type: 'undo' | 'load'
 }
 
 /** Actions that change scores or the board go on the undo stack; navigation does not. */
-const UNDOABLE = new Set<Action['type']>(['award', 'pass', 'noOne', 'adjust']);
+const UNDOABLE = new Set<Action['type']>(['award', 'noOne', 'adjust']);
 
 export function gameReducer(store: Store, action: Action): Store {
   if (action.type === 'load') return action.store;

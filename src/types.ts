@@ -27,10 +27,6 @@ export interface Team {
 export interface OpenTile {
   cat: number;
   tile: number;
-  /** Team index currently answering. */
-  answering: number;
-  /** Team indexes that have already had a try, including the one answering now. */
-  tried: number[];
   revealed: boolean;
 }
 

@@ -34,3 +34,9 @@ about 20 characters) so they stay large on the board.
 | Ctrl/Cmd+Z | Undo |
 
 Game state is saved in the browser's localStorage after every action.
+
+## Live site
+
+Every push to `main` builds the site and publishes it to GitHub Pages
+(`.github/workflows/deploy.yml`) at https://ashwin-raman-oss.github.io/diwalitrivia/.
+One-time setup: repo Settings → Pages → Source: **GitHub Actions**.

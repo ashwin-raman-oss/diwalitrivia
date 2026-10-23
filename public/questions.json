@@ -2,11 +2,11 @@
   "title": "Trivia Night",
   "categories": [
     {
-      "name": "Flags",
+      "name": "Absolut",
       "tiles": [
         { "value": 100, "question": "Name the country.", "answer": "Japan", "funFact": "The red disc represents the sun." },
         { "value": 200, "question": "Name the country.", "answer": "Italy", "accept": "Not Ireland: Ireland is green, white, orange." },
-        { "value": 300, "question": "Name the country.", "answer": "Germany" },
+        { "value": 300, "question": "Name the city.", "answer": "Bangkok", "questionImage": "/images/absolut-300-q.png", "answerImage": "/images/absolut-300-a.png", "funFact": "The ad shows one of Thailand's floating markets." },
         { "value": 400, "question": "Name the country.", "answer": "Sweden", "accept": "Not Finland: Finland is a blue cross on white." },
         { "value": 500, "question": "Name the country.", "answer": "Mauritius" }
       ]

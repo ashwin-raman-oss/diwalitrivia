@@ -277,21 +277,21 @@
         {
           "value": 200,
           "question": "Name the empire at its peak.",
-          "answer": "Mongol Empire",
+          "answer": "Inca Empire",
           "questionImage": "/images/empires-200-q.png",
           "answerImage": "/images/empires-200-a.png"
         },
         {
           "value": 300,
           "question": "Name the empire at its peak.",
-          "answer": "Ottoman Empire",
+          "answer": "Mongol Empire",
           "questionImage": "/images/empires-300-q.png",
           "answerImage": "/images/empires-300-a.png"
         },
         {
           "value": 400,
           "question": "Name the empire at its peak.",
-          "answer": "Inca Empire",
+          "answer": "Ottoman Empire",
           "questionImage": "/images/empires-400-q.png",
           "answerImage": "/images/empires-400-a.png"
         },
@@ -301,7 +301,7 @@
           "answer": "Alexander the Great's empire",
           "questionImage": "/images/empires-500-q.png",
           "answerImage": "/images/empires-500-a.png",
-          "accept": "Accept Macedonian Empire. Not Persian."
+          "accept": "Accept Macedonian Empire. Persia is a close miss: Alexander had just conquered it."
         }
       ]
     },

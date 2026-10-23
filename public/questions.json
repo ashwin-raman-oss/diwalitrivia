@@ -311,32 +311,34 @@
       "tiles": [
         {
           "value": 100,
-          "question": "Nomophobia",
-          "answer": "Fear of being without your phone",
-          "funFact": "No-mo: no mobile."
+          "question": "Chorophobia",
+          "answer": "Fear of dancing",
+          "funFact": "Choro, as in choreography."
         },
         {
           "value": 200,
-          "question": "Triskaidekaphobia",
-          "answer": "Fear of the number 13",
-          "funFact": "Tris = 3, deka = 10."
+          "question": "Nomophobia",
+          "answer": "Fear of being without your phone",
+          "accept": "Accept fear of losing your phone",
+          "funFact": "No-mo: no mobile."
         },
         {
           "value": 300,
-          "question": "Hippopotomonstrosesquippedaliophobia",
-          "answer": "Fear of long words"
+          "question": "Triskaidekaphobia",
+          "answer": "Fear of the number 13",
+          "funFact": "Tris = 3, deka = 10. It's why some buildings skip the 13th floor."
         },
         {
           "value": 400,
-          "question": "Arachibutyrophobia",
-          "answer": "Fear of peanut butter sticking to the roof of your mouth",
-          "funFact": "Arachis is the peanut plant, not spiders."
+          "question": "Ergophobia",
+          "answer": "Fear of work",
+          "funFact": "Ergo, as in ergonomics."
         },
         {
           "value": 500,
-          "question": "Hexakosioihexekontahexaphobia",
-          "answer": "Fear of the number 666",
-          "funFact": "Greek for 600 + 60 + 6."
+          "question": "Hippopotomonstrosesquippedaliophobia",
+          "answer": "Fear of long words",
+          "funFact": "Sesquipedalian is Latin for 'a foot and a half long.'"
         }
       ]
     },

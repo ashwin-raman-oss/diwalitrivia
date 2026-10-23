@@ -1,0 +1,105 @@
+{
+  "title": "Trivia Night",
+  "categories": [
+    {
+      "name": "Flags",
+      "tiles": [
+        { "value": 100, "question": "Name the country.", "answer": "Japan", "questionImage": "/images/flags-100-q.png", "answerImage": "/images/flags-100-a.png", "funFact": "The red disc represents the sun." },
+        { "value": 200, "question": "Name the country.", "answer": "Italy", "questionImage": "/images/flags-200-q.png", "answerImage": "/images/flags-200-a.png", "accept": "Not Ireland: Ireland is green, white, orange." },
+        { "value": 300, "question": "Name the country.", "answer": "Germany", "questionImage": "/images/flags-300-q.png" },
+        { "value": 400, "question": "Name the country.", "answer": "Sweden", "questionImage": "/images/flags-400-q.png", "answerImage": "/images/flags-400-a.png", "accept": "Not Finland: Finland is a blue cross on white." },
+        { "value": 500, "question": "Name the country.", "answer": "Mauritius", "questionImage": "/images/flags-500-q.png" }
+      ]
+    },
+    {
+      "name": "World Capitals",
+      "tiles": [
+        { "value": 100, "question": "What is the capital of France?", "answer": "Paris" },
+        { "value": 200, "question": "What is the capital of Australia?", "answer": "Canberra", "accept": "Sydney is wrong.", "funFact": "Canberra was chosen as a compromise between Sydney and Melbourne." },
+        { "value": 300, "question": "What is the capital of Canada?", "answer": "Ottawa" },
+        { "value": 400, "question": "What is the capital of Turkey?", "answer": "Ankara", "funFact": "Istanbul is the largest city, but not the capital." },
+        { "value": 500, "question": "What is the capital of Kazakhstan?", "answer": "Astana", "accept": "Accept Nur-Sultan, its name from 2019 to 2022." }
+      ]
+    },
+    {
+      "name": "Science",
+      "tiles": [
+        { "value": 100, "question": "Which planet is known as the Red Planet?", "answer": "Mars" },
+        { "value": 200, "question": "What shape is each cell of a honeycomb?", "answer": "Hexagon", "answerImage": "/images/science-200-a.png", "funFact": "Hexagons tile a surface using the least wax for the space they enclose." },
+        { "value": 300, "question": "What is the chemical symbol for gold?", "answer": "Au", "funFact": "From the Latin aurum." },
+        { "value": 400, "question": "How many bones are in the adult human body?", "answer": "206" },
+        { "value": 500, "question": "Which gas makes up about 78% of Earth's atmosphere?", "answer": "Nitrogen", "accept": "Oxygen is only about 21%." }
+      ]
+    },
+    {
+      "name": "Food & Drink",
+      "tiles": [
+        { "value": 100, "question": "What is the main ingredient in guacamole?", "answer": "Avocado" },
+        { "value": 200, "question": "Feta cheese traditionally comes from which country?", "answer": "Greece" },
+        { "value": 300, "question": "Which spice comes from the crocus flower and is the priciest by weight?", "answer": "Saffron" },
+        { "value": 400, "question": "Which nut is the base of marzipan?", "answer": "Almond" },
+        { "value": 500, "question": "What type of vinegar is used to season sushi rice?", "answer": "Rice vinegar" }
+      ]
+    },
+    {
+      "name": "Movies",
+      "tiles": [
+        { "value": 100, "question": "Which 1997 film follows Jack and Rose aboard a doomed ship?", "answer": "Titanic" },
+        { "value": 200, "question": "In the 1939 film The Wizard of Oz, what are Dorothy's slippers made of?", "answer": "Rubies", "accept": "Accept ruby or red.", "funFact": "In the original book they were silver." },
+        { "value": 300, "question": "What was Pixar's first feature-length film?", "answer": "Toy Story", "funFact": "Released in 1995, it was the first fully computer-animated feature." },
+        { "value": 400, "question": "Who directed Jurassic Park?", "answer": "Steven Spielberg" },
+        { "value": 500, "question": "Which film won the first Oscar for Best Animated Feature?", "answer": "Shrek" }
+      ]
+    },
+    {
+      "name": "Music",
+      "tiles": [
+        { "value": 100, "question": "How many strings does a standard guitar have?", "answer": "Six" },
+        { "value": 200, "question": "Which band released the album Abbey Road?", "answer": "The Beatles" },
+        { "value": 300, "question": "What is the highest standard female singing voice?", "answer": "Soprano" },
+        { "value": 400, "question": "Which composer wrote The Four Seasons?", "answer": "Antonio Vivaldi", "accept": "Vivaldi alone is fine." },
+        { "value": 500, "question": "How many semitones are in an octave?", "answer": "Twelve" }
+      ]
+    },
+    {
+      "name": "Geography",
+      "tiles": [
+        { "value": 100, "question": "What is the longest river in Africa?", "answer": "The Nile" },
+        { "value": 200, "question": "What is the largest ocean on Earth?", "answer": "The Pacific" },
+        { "value": 300, "question": "What is the smallest country in the world by area?", "answer": "Vatican City" },
+        { "value": 400, "question": "Which country has the most natural lakes?", "answer": "Canada" },
+        { "value": 500, "question": "Mount Kilimanjaro is in which country?", "answer": "Tanzania" }
+      ]
+    },
+    {
+      "name": "History",
+      "tiles": [
+        { "value": 100, "question": "Who was the first person to walk on the Moon?", "answer": "Neil Armstrong" },
+        { "value": 200, "question": "In what year did the Berlin Wall fall?", "answer": "1989" },
+        { "value": 300, "question": "Which civilization built Machu Picchu?", "answer": "The Inca" },
+        { "value": 400, "question": "Who was the first female Prime Minister of the United Kingdom?", "answer": "Margaret Thatcher" },
+        { "value": 500, "question": "In what year was the Magna Carta sealed?", "answer": "1215" }
+      ]
+    },
+    {
+      "name": "Sports",
+      "tiles": [
+        { "value": 100, "question": "How many players does each side have on the field in soccer?", "answer": "Eleven" },
+        { "value": 200, "question": "In which sport would you perform a slam dunk?", "answer": "Basketball" },
+        { "value": 300, "question": "Which country hosted the 2016 Summer Olympics?", "answer": "Brazil", "accept": "Accept Rio de Janeiro." },
+        { "value": 400, "question": "In tennis, what is a score of zero called?", "answer": "Love" },
+        { "value": 500, "question": "How long is a marathon, in miles?", "answer": "26.2 miles", "accept": "Accept 26." }
+      ]
+    },
+    {
+      "name": "The Animal Kingdom",
+      "tiles": [
+        { "value": 100, "question": "What is the largest mammal on Earth?", "answer": "The blue whale" },
+        { "value": 200, "question": "What is a baby kangaroo called?", "answer": "A joey" },
+        { "value": 300, "question": "How many hearts does an octopus have?", "answer": "Three" },
+        { "value": 400, "question": "What is the fastest land animal?", "answer": "The cheetah" },
+        { "value": 500, "question": "What is a group of crows called?", "answer": "A murder" }
+      ]
+    }
+  ]
+}

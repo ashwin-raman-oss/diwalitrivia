@@ -1,20 +1,24 @@
-/* ---------- Theme: editorial, with a hint of rose. All colors live here. ---------- */
+/* ---------- Theme: blush white with a hint of rose. All colors live here. ---------- */
 :root {
-  --bg: #1b1418; /* plum-charcoal page */
-  --surface: #241b20; /* modals, hover */
-  --rule: rgb(243 235 228 / 0.12); /* hairlines */
-  --rule-strong: rgb(243 235 228 / 0.26);
-  --text: #f3ebe4; /* warm ivory */
-  --text-muted: #a89a9d;
-  --text-faint: #6a5b61;
-  --text-used: rgb(243 235 228 / 0.1);
-  --rose: #d7a0a8; /* accent: fine details only */
-  --rose-tint: #241a1f; /* page color with a touch of rose, for hover */
-  --rose-gold: #d6a58f; /* winner on the final screen */
+  --bg: #fff9f9; /* white with a pink tinge */
+  --surface: #ffffff; /* modals */
+  --tile: #fbeef0; /* blush tile */
+  --tile-hover: #f7e0e5;
+  --tile-used: #fdf6f7;
+  --rule: rgb(74 38 50 / 0.1); /* hairlines */
+  --rule-strong: rgb(74 38 50 / 0.2);
+  --text: #4a2632; /* deep plum ink */
+  --text-muted: #8c6b75;
+  --text-faint: #c3a7af;
+  --text-used: #ead7dc;
+  --rose: #c56b80; /* accent */
+  --rose-deep: #a94f66; /* primary buttons, tile values */
+  --rose-deeper: #8f3f55;
+  --rose-gold: #b97a5f; /* winner on the final screen */
 
-  --serif: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
-  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --radius: 2px;
+  --serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --sans: 'Jost Variable', 'Futura', system-ui, sans-serif;
+  --radius: 0.8vh;
   --fast: 160ms;
 
   font-family: var(--sans);
@@ -65,7 +69,7 @@ kbd {
 
 sup {
   font-size: 0.42em;
-  vertical-align: 0.95em;
+  vertical-align: 0.9em;
   margin-right: 0.06em;
   color: var(--rose);
   font-weight: 400;
@@ -124,11 +128,11 @@ sup {
   outline-offset: 3px;
 }
 .btn--primary {
-  background: var(--text);
-  color: var(--bg);
+  background: var(--rose-deep);
+  color: #fff;
 }
 .btn--primary:hover {
-  background: var(--rose);
+  background: var(--rose-deeper);
 }
 .btn--secondary {
   border-color: var(--rule-strong);
@@ -136,7 +140,7 @@ sup {
 }
 .btn--secondary:hover {
   border-color: var(--text-muted);
-  background: var(--surface);
+  background: var(--tile);
 }
 .btn--big {
   font-size: 2.8vh;
@@ -193,10 +197,10 @@ sup {
 .setup__title {
   margin: 1.6vh 0 0;
   font-family: var(--serif);
-  font-size: 11vh;
-  font-weight: 400;
+  font-size: 13vh;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .setup__panel {
   display: flex;
@@ -221,16 +225,17 @@ sup {
   width: 3.5vh;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 2.8vh;
-  color: var(--text-faint);
+  font-size: 3.2vh;
+  color: var(--rose);
   text-align: right;
 }
 .input {
   flex: 1;
   min-width: 0;
   font-family: var(--serif);
-  font-size: 3.6vh;
-  padding: 0.8vh 0;
+  font-size: 4.2vh;
+  font-weight: 500;
+  padding: 0.6vh 0;
   border: none;
   border-bottom: 1px solid var(--rule-strong);
   border-radius: 0;
@@ -264,7 +269,8 @@ sup {
   padding: 1.4vh 0;
   border-bottom: 1px solid var(--rule);
   font-family: var(--serif);
-  font-size: 3.2vh;
+  font-size: 3.8vh;
+  font-weight: 500;
 }
 .setup__saved-score {
   font-variant-numeric: tabular-nums lining-nums;
@@ -279,7 +285,9 @@ sup {
   width: min(640px, 100%);
   padding: 1.4vh 2vh;
   border: 1px solid var(--rule-strong);
-  border-left: 2px solid var(--rose);
+  border-left: 3px solid var(--rose);
+  border-radius: var(--radius);
+  background: var(--surface);
   font-size: 1.8vh;
   line-height: 1.5;
   color: var(--text-muted);
@@ -321,7 +329,7 @@ sup {
 .topbar__meta {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 2vh;
+  font-size: 2.5vh;
   color: var(--text-muted);
 }
 .host-controls {
@@ -339,15 +347,13 @@ sup {
 .board__grid {
   display: grid;
   grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
-  column-gap: 1px;
+  column-gap: 0.6vw;
 }
 .board__grid {
   grid-template-rows: repeat(var(--rows), minmax(0, 1fr));
-  row-gap: 1px;
+  row-gap: 1vh;
   min-height: 0;
-  background: var(--rule); /* shows through the 1px gaps as hairlines */
-  border-top: 1px solid var(--rule-strong);
-  border-bottom: 1px solid var(--rule-strong);
+  padding-bottom: 1.6vh;
 }
 .cat {
   display: flex;
@@ -384,8 +390,8 @@ sup {
   width: 100%;
   max-height: 100%;
   font-family: var(--serif);
-  font-size: 2.9vh;
-  font-weight: 500;
+  font-size: 3.1vh;
+  font-weight: 600;
   line-height: 1.2;
   text-align: center;
   overflow: hidden;
@@ -395,12 +401,12 @@ sup {
   min-width: 0;
   min-height: 0;
   border: none;
-  border-radius: 0;
-  background: var(--bg);
-  color: var(--text);
+  border-radius: var(--radius);
+  background: var(--tile);
+  color: var(--rose-deep);
   font-family: var(--serif);
-  font-size: 6.4vh;
-  font-weight: 400;
+  font-size: 7.4vh;
+  font-weight: 600;
   letter-spacing: -0.01em;
   font-variant-numeric: lining-nums;
   transition:
@@ -408,10 +414,11 @@ sup {
     color var(--fast);
 }
 .tile:hover:not(:disabled) {
-  background: var(--rose-tint);
-  color: var(--rose);
+  background: var(--tile-hover);
+  color: var(--rose-deeper);
 }
 .tile--used {
+  background: var(--tile-used);
   color: var(--text-used);
   cursor: default;
 }
@@ -422,6 +429,7 @@ sup {
 /* ---------- Scoreboard ---------- */
 .scoreboard {
   display: flex;
+  border-top: 1px solid var(--rule-strong);
 }
 .score {
   position: relative;
@@ -465,9 +473,9 @@ sup {
 }
 .score__value {
   font-family: var(--serif);
-  font-size: 6.4vh;
-  font-weight: 400;
-  line-height: 1.1;
+  font-size: 7.4vh;
+  font-weight: 600;
+  line-height: 1.05;
   font-variant-numeric: tabular-nums lining-nums;
 }
 
@@ -489,17 +497,20 @@ sup {
 .clue__cat {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 3.6vh;
+  font-weight: 500;
+  font-size: 4.2vh;
 }
 .clue__value {
   font-style: normal;
   margin-left: 1.4vw;
-  color: var(--text-muted);
+  color: var(--rose-deep);
+  font-weight: 600;
 }
 .answering {
   white-space: nowrap;
   font-family: var(--serif);
-  font-size: 3.4vh;
+  font-size: 4vh;
+  font-weight: 600;
 }
 .answering__label {
   font-family: var(--sans);
@@ -512,7 +523,7 @@ sup {
   vertical-align: 0.3em;
 }
 .answering strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 .clue__body {
   display: flex;
@@ -535,41 +546,42 @@ sup {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  outline: 1px solid var(--rule-strong);
-  outline-offset: 0.8vh;
+  border-radius: var(--radius);
+  box-shadow: 0 1vh 4vh rgb(74 38 50 / 0.12);
 }
 .clue__question {
   margin: 0;
   max-width: 78vw;
   font-family: var(--serif);
-  font-size: 5.6vh;
-  font-weight: 400;
-  line-height: 1.2;
+  font-size: 6.4vh;
+  font-weight: 500;
+  line-height: 1.15;
   text-wrap: balance;
 }
 .clue__body--text .clue__question {
-  font-size: 8vh;
+  font-size: 9vh;
 }
 .clue__answer {
   margin: 0;
   max-width: 90vw;
   font-family: var(--serif);
-  font-size: 9vh;
-  font-weight: 500;
-  line-height: 1.05;
-  letter-spacing: -0.015em;
+  font-size: 10.5vh;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 .clue__body--text .clue__answer {
-  font-size: 14vh;
+  font-size: 16vh;
 }
 .clue__fact {
   margin: 0;
   max-width: 62vw;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 3vh;
-  line-height: 1.4;
+  font-weight: 500;
+  font-size: 3.6vh;
+  line-height: 1.35;
   color: var(--text-muted);
   text-wrap: balance;
 }
@@ -585,6 +597,8 @@ sup {
   margin: 0;
   padding: 1.2vh 2.2vh;
   border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
   font-size: 2.2vh;
   color: var(--text);
 }
@@ -639,16 +653,16 @@ sup {
   position: relative;
   min-width: 0;
   padding: 3vh 1.6vw;
-  border: 1px solid var(--rule-strong);
+  border: 1px solid transparent;
   border-radius: var(--radius);
-  background: none;
+  background: var(--tile);
   transition:
     background var(--fast),
     border-color var(--fast);
 }
 .award__btn:hover {
   border-color: var(--rose);
-  background: var(--rose-tint);
+  background: var(--tile-hover);
 }
 .award__btn:focus-visible {
   outline: 1px solid var(--rose);
@@ -664,14 +678,20 @@ sup {
 .award__name {
   display: block;
   font-family: var(--serif);
-  font-size: 4.4vh;
-  line-height: 1.15;
+  font-size: 5.2vh;
+  font-weight: 600;
+  line-height: 1.1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.award__btn--none {
+  background: none;
+  border-color: var(--rule-strong);
+}
 .award__btn--none .award__name {
   font-style: italic;
+  font-weight: 500;
   color: var(--text-muted);
 }
 .award__btn--none:hover {
@@ -692,21 +712,23 @@ sup {
 .final__title {
   margin: 0.6vh 0 0;
   font-family: var(--serif);
-  font-size: 11vh;
-  font-weight: 400;
+  font-size: 13vh;
+  font-weight: 500;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .final__winner {
   margin: 0;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 3.6vh;
+  font-weight: 500;
+  font-size: 4.2vh;
   color: var(--text-muted);
 }
 .final__winner span {
   color: var(--rose-gold);
   font-style: normal;
+  font-weight: 600;
 }
 .final__list {
   list-style: none;
@@ -724,11 +746,13 @@ sup {
   padding: 1.8vh 0.4vh;
   border-bottom: 1px solid var(--rule);
   font-family: var(--serif);
-  font-size: 4.4vh;
+  font-size: 5vh;
+  font-weight: 500;
 }
 .final__row--win .final__name,
 .final__row--win .final__score {
   color: var(--rose-gold);
+  font-weight: 600;
 }
 .final__rank {
   font-style: italic;
@@ -753,7 +777,8 @@ sup {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgb(15 10 13 / 0.78);
+  background: rgb(74 38 50 / 0.28);
+  backdrop-filter: blur(4px);
   display: grid;
   place-items: center;
   padding: 16px;
@@ -763,8 +788,9 @@ sup {
 .modal {
   width: min(560px, 100%);
   background: var(--surface);
-  border: 1px solid var(--rule-strong);
-  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  border-radius: calc(var(--radius) * 2);
+  box-shadow: 0 2vh 6vh rgb(74 38 50 / 0.18);
   padding: 3.2vh;
   font-size: 2.1vh;
   line-height: 1.5;
@@ -774,8 +800,8 @@ sup {
   margin: 0 0 1.4vh;
   color: var(--text);
   font-family: var(--serif);
-  font-weight: 400;
-  font-size: 3.6vh;
+  font-weight: 600;
+  font-size: 4vh;
 }
 .modal p {
   margin: 0 0 1vh;
@@ -800,7 +826,8 @@ sup {
 .adjust__name {
   color: var(--text);
   font-family: var(--serif);
-  font-size: 2.8vh;
+  font-size: 3.2vh;
+  font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -809,7 +836,8 @@ sup {
   text-align: center;
   color: var(--text);
   font-family: var(--serif);
-  font-size: 2.8vh;
+  font-size: 3.2vh;
+  font-weight: 600;
   font-variant-numeric: tabular-nums lining-nums;
 }
 

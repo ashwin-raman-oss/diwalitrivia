@@ -2,103 +2,374 @@
   "title": "Trivia Night",
   "categories": [
     {
-      "name": "Absolut",
+      "name": "Badly Explained Movies",
       "tiles": [
-        { "value": 100, "question": "Name the country.", "answer": "Japan", "funFact": "The red disc represents the sun." },
-        { "value": 200, "question": "Name the country.", "answer": "Italy", "accept": "Not Ireland: Ireland is green, white, orange." },
-        { "value": 300, "question": "Name the city.", "answer": "Bangkok", "questionImage": "/images/absolut-300-q.png", "answerImage": "/images/absolut-300-a.png", "funFact": "The ad shows one of Thailand's floating markets." },
-        { "value": 400, "question": "Name the country.", "answer": "Sweden", "accept": "Not Finland: Finland is a blue cross on white." },
-        { "value": 500, "question": "Name the country.", "answer": "Mauritius" }
+        {
+          "value": 100,
+          "question": "Everyone tries the ice bucket challenge.",
+          "answer": "Titanic"
+        },
+        {
+          "value": 200,
+          "question": "A group spends 9 hours returning jewelry.",
+          "answer": "The Lord of the Rings",
+          "accept": "Accept any Lord of the Rings film"
+        },
+        {
+          "value": 300,
+          "question": "A boy spends 7 years being the third wheel.",
+          "answer": "Harry Potter",
+          "accept": "Accept any Harry Potter film"
+        },
+        {
+          "value": 400,
+          "question": "A family's first Airbnb experience goes very wrong.",
+          "answer": "The Shining"
+        },
+        {
+          "value": 500,
+          "question": "A paranoid billionaire is afraid of an immigrant.",
+          "answer": "Batman v Superman: Dawn of Justice",
+          "accept": "Accept Batman v Superman"
+        }
       ]
     },
     {
-      "name": "World Capitals",
+      "name": "Absolut Cities",
       "tiles": [
-        { "value": 100, "question": "What is the capital of France?", "answer": "Paris" },
-        { "value": 200, "question": "What is the capital of Australia?", "answer": "Canberra", "accept": "Sydney is wrong.", "funFact": "Canberra was chosen as a compromise between Sydney and Melbourne." },
-        { "value": 300, "question": "What is the capital of Canada?", "answer": "Ottawa" },
-        { "value": 400, "question": "What is the capital of Turkey?", "answer": "Ankara", "funFact": "Istanbul is the largest city, but not the capital." },
-        { "value": 500, "question": "What is the capital of Kazakhstan?", "answer": "Astana", "accept": "Accept Nur-Sultan, its name from 2019 to 2022." }
+        {
+          "value": 100,
+          "question": "Name the city.",
+          "answer": "Manhattan",
+          "questionImage": "/images/absolut-100-q.png",
+          "answerImage": "/images/absolut-100-a.png",
+          "accept": "Accept New York",
+          "funFact": "Central Park forms the bottle."
+        },
+        {
+          "value": 200,
+          "question": "Name the city.",
+          "answer": "Rio de Janeiro",
+          "questionImage": "/images/absolut-200-q.png",
+          "answerImage": "/images/absolut-200-a.png",
+          "accept": "Accept Rio",
+          "funFact": "The bottle is a carnival headdress."
+        },
+        {
+          "value": 300,
+          "question": "Name the city.",
+          "answer": "Bangkok",
+          "questionImage": "/images/absolut-300-q.png",
+          "answerImage": "/images/absolut-300-a.png",
+          "funFact": "A floating market forms the bottle."
+        },
+        {
+          "value": 400,
+          "question": "Name the city.",
+          "answer": "Boston",
+          "questionImage": "/images/absolut-400-q.png",
+          "answerImage": "/images/absolut-400-a.png",
+          "funFact": "Crates in the harbor: the Boston Tea Party."
+        },
+        {
+          "value": 500,
+          "question": "Name the city.",
+          "answer": "Geneva",
+          "questionImage": "/images/absolut-500-q.png",
+          "answerImage": "/images/absolut-500-a.png",
+          "accept": "Do not accept Zurich",
+          "funFact": "Geneva is the heart of Swiss watchmaking."
+        }
       ]
     },
     {
-      "name": "Science",
+      "name": "Food Round",
       "tiles": [
-        { "value": 100, "question": "Which planet is known as the Red Planet?", "answer": "Mars" },
-        { "value": 200, "question": "What shape is each cell of a honeycomb?", "answer": "Hexagon", "funFact": "Hexagons tile a surface using the least wax for the space they enclose." },
-        { "value": 300, "question": "What is the chemical symbol for gold?", "answer": "Au", "funFact": "From the Latin aurum." },
-        { "value": 400, "question": "How many bones are in the adult human body?", "answer": "206" },
-        { "value": 500, "question": "Which gas makes up about 78% of Earth's atmosphere?", "answer": "Nitrogen", "accept": "Oxygen is only about 21%." }
+        {
+          "value": 100,
+          "question": "Wendy's is named after this person in founder Dave Thomas's life.",
+          "answer": "His daughter"
+        },
+        {
+          "value": 200,
+          "question": "Hawaiian pizza was invented in this country.",
+          "answer": "Canada"
+        },
+        {
+          "value": 300,
+          "question": "A pharmacist created this soda as a nerve tonic.",
+          "answer": "Coca-Cola"
+        },
+        {
+          "value": 400,
+          "question": "Nachos are named after this man's nickname.",
+          "answer": "Ignacio \"Nacho\" Anaya"
+        },
+        {
+          "value": 500,
+          "question": "Graham crackers are named for a preacher who pushed bland food to curb this.",
+          "answer": "Lust"
+        }
       ]
     },
     {
-      "name": "Food & Drink",
+      "name": "Old Logos",
       "tiles": [
-        { "value": 100, "question": "What is the main ingredient in guacamole?", "answer": "Avocado" },
-        { "value": 200, "question": "Feta cheese traditionally comes from which country?", "answer": "Greece" },
-        { "value": 300, "question": "Which spice comes from the crocus flower and is the priciest by weight?", "answer": "Saffron" },
-        { "value": 400, "question": "Which nut is the base of marzipan?", "answer": "Almond" },
-        { "value": 500, "question": "What type of vinegar is used to season sushi rice?", "answer": "Rice vinegar" }
+        {
+          "value": 100,
+          "question": "Name the company from its old logo.",
+          "answer": "Starbucks",
+          "questionImage": "/images/logos-100-q.png",
+          "answerImage": "/images/logos-100-a.png",
+          "funFact": "The original logo was a brown, full-body siren."
+        },
+        {
+          "value": 200,
+          "question": "Name the company from its old logo.",
+          "answer": "Pepsi",
+          "questionImage": "/images/logos-200-q.png",
+          "answerImage": "/images/logos-200-a.png",
+          "funFact": "Its early red script looked a lot like Coke's."
+        },
+        {
+          "value": 300,
+          "question": "Name the company from its old logo.",
+          "answer": "Twitter",
+          "questionImage": "/images/logos-300-q.png",
+          "answerImage": "/images/logos-300-a.png",
+          "funFact": "The bird was named Larry, after Larry Bird."
+        },
+        {
+          "value": 400,
+          "question": "Name the company from its old logo.",
+          "answer": "Nike",
+          "questionImage": "/images/logos-400-q.png",
+          "answerImage": "/images/logos-400-a.png",
+          "funFact": "A college student designed the swoosh for $35."
+        },
+        {
+          "value": 500,
+          "question": "Name the company from its old logo.",
+          "answer": "Apple",
+          "questionImage": "/images/logos-500-q.png",
+          "answerImage": "/images/logos-500-a.png",
+          "funFact": "The first logo showed Isaac Newton under a tree."
+        }
       ]
     },
     {
-      "name": "Movies",
+      "name": "Sloppy Seconds",
       "tiles": [
-        { "value": 100, "question": "Which 1997 film follows Jack and Rose aboard a doomed ship?", "answer": "Titanic" },
-        { "value": 200, "question": "In the 1939 film The Wizard of Oz, what are Dorothy's slippers made of?", "answer": "Rubies", "accept": "Accept ruby or red.", "funFact": "In the original book they were silver." },
-        { "value": 300, "question": "What was Pixar's first feature-length film?", "answer": "Toy Story", "funFact": "Released in 1995, it was the first fully computer-animated feature." },
-        { "value": 400, "question": "Who directed Jurassic Park?", "answer": "Steven Spielberg" },
-        { "value": 500, "question": "Which film won the first Oscar for Best Animated Feature?", "answer": "Shrek" }
+        {
+          "value": 100,
+          "question": "The second man to walk on the moon.",
+          "answer": "Buzz Aldrin"
+        },
+        {
+          "value": 200,
+          "question": "Kanye interrupted Taylor Swift to say this artist deserved the win.",
+          "answer": "Beyoncé"
+        },
+        {
+          "value": 300,
+          "question": "This movie was mistakenly announced as Best Picture.",
+          "answer": "La La Land"
+        },
+        {
+          "value": 400,
+          "question": "Microsoft's answer to the iPod.",
+          "answer": "Zune"
+        },
+        {
+          "value": 500,
+          "question": "He filed a telephone patent the same day as Alexander Graham Bell.",
+          "answer": "Elisha Gray"
+        }
       ]
     },
     {
-      "name": "Music",
+      "name": "Memoir Titles",
       "tiles": [
-        { "value": 100, "question": "How many strings does a standard guitar have?", "answer": "Six" },
-        { "value": 200, "question": "Which band released the album Abbey Road?", "answer": "The Beatles" },
-        { "value": 300, "question": "What is the highest standard female singing voice?", "answer": "Soprano" },
-        { "value": 400, "question": "Which composer wrote The Four Seasons?", "answer": "Antonio Vivaldi", "accept": "Vivaldi alone is fine." },
-        { "value": 500, "question": "How many semitones are in an octave?", "answer": "Twelve" }
+        {
+          "value": 100,
+          "question": "Friends, Lovers, and the Big Terrible Thing",
+          "answer": "Matthew Perry"
+        },
+        {
+          "value": 200,
+          "question": "The Answer Is...",
+          "answer": "Alex Trebek"
+        },
+        {
+          "value": 300,
+          "question": "Behind the Wand",
+          "answer": "Tom Felton"
+        },
+        {
+          "value": 400,
+          "question": "Beneath the Surface",
+          "answer": "Michael Phelps"
+        },
+        {
+          "value": 500,
+          "question": "Losing My Virginity",
+          "answer": "Richard Branson"
+        }
       ]
     },
     {
-      "name": "Geography",
+      "name": "Graphs",
       "tiles": [
-        { "value": 100, "question": "What is the longest river in Africa?", "answer": "The Nile" },
-        { "value": 200, "question": "What is the largest ocean on Earth?", "answer": "The Pacific" },
-        { "value": 300, "question": "What is the smallest country in the world by area?", "answer": "Vatican City" },
-        { "value": 400, "question": "Which country has the most natural lakes?", "answer": "Canada" },
-        { "value": 500, "question": "Mount Kilimanjaro is in which country?", "answer": "Tanzania" }
+        {
+          "value": 100,
+          "question": "What happened here?",
+          "answer": "COVID panic buying",
+          "questionImage": "/images/graphs-100-q.png",
+          "answerImage": "/images/graphs-100-a.png",
+          "funFact": "Searches for toilet paper, March 2020."
+        },
+        {
+          "value": 200,
+          "question": "What happened here?",
+          "answer": "Reddit's WallStreetBets",
+          "questionImage": "/images/graphs-200-q.png",
+          "answerImage": "/images/graphs-200-a.png",
+          "accept": "Accept the GameStop short squeeze",
+          "funFact": "About $17 at the start of January to a $347.51 close on Jan 27, 2021."
+        },
+        {
+          "value": 300,
+          "question": "What happened here?",
+          "answer": "The Ice Bucket Challenge",
+          "questionImage": "/images/graphs-300-q.png",
+          "answerImage": "/images/graphs-300-a.png",
+          "funFact": "$100.9M in one month of 2014, vs. $2.8M the year before."
+        },
+        {
+          "value": 400,
+          "question": "What happened here?",
+          "answer": "Michael Jordan retires and the dynasty breaks up",
+          "questionImage": "/images/graphs-400-q.png",
+          "answerImage": "/images/graphs-400-a.png",
+          "accept": "Accept Jordan retiring",
+          "funFact": "From 62-20 and a sixth title to 13-37 the next season."
+        },
+        {
+          "value": 500,
+          "question": "What happened here?",
+          "answer": "Amazon's Alexa (the Echo launch)",
+          "questionImage": "/images/graphs-500-q.png",
+          "answerImage": "/images/graphs-500-a.png",
+          "accept": "Accept Amazon Echo or Alexa",
+          "funFact": "6,053 baby girls named Alexa in 2015. Just 243 in 2025."
+        }
       ]
     },
     {
-      "name": "History",
+      "name": "Empire Maps",
       "tiles": [
-        { "value": 100, "question": "Who was the first person to walk on the Moon?", "answer": "Neil Armstrong" },
-        { "value": 200, "question": "In what year did the Berlin Wall fall?", "answer": "1989" },
-        { "value": 300, "question": "Which civilization built Machu Picchu?", "answer": "The Inca" },
-        { "value": 400, "question": "Who was the first female Prime Minister of the United Kingdom?", "answer": "Margaret Thatcher" },
-        { "value": 500, "question": "In what year was the Magna Carta sealed?", "answer": "1215" }
+        {
+          "value": 100,
+          "question": "Name the empire at its peak.",
+          "answer": "Roman Empire",
+          "questionImage": "/images/empires-100-q.png",
+          "answerImage": "/images/empires-100-a.png"
+        },
+        {
+          "value": 200,
+          "question": "Name the empire at its peak.",
+          "answer": "Mongol Empire",
+          "questionImage": "/images/empires-200-q.png",
+          "answerImage": "/images/empires-200-a.png"
+        },
+        {
+          "value": 300,
+          "question": "Name the empire at its peak.",
+          "answer": "Ottoman Empire",
+          "questionImage": "/images/empires-300-q.png",
+          "answerImage": "/images/empires-300-a.png"
+        },
+        {
+          "value": 400,
+          "question": "Name the empire at its peak.",
+          "answer": "Inca Empire",
+          "questionImage": "/images/empires-400-q.png",
+          "answerImage": "/images/empires-400-a.png"
+        },
+        {
+          "value": 500,
+          "question": "Name the empire at its peak.",
+          "answer": "Alexander the Great's empire",
+          "questionImage": "/images/empires-500-q.png",
+          "answerImage": "/images/empires-500-a.png",
+          "accept": "Accept Macedonian Empire. Not Persian."
+        }
       ]
     },
     {
-      "name": "Sports",
+      "name": "Name That Phobia",
       "tiles": [
-        { "value": 100, "question": "How many players does each side have on the field in soccer?", "answer": "Eleven" },
-        { "value": 200, "question": "In which sport would you perform a slam dunk?", "answer": "Basketball" },
-        { "value": 300, "question": "Which country hosted the 2016 Summer Olympics?", "answer": "Brazil", "accept": "Accept Rio de Janeiro." },
-        { "value": 400, "question": "In tennis, what is a score of zero called?", "answer": "Love" },
-        { "value": 500, "question": "How long is a marathon, in miles?", "answer": "26.2 miles", "accept": "Accept 26." }
+        {
+          "value": 100,
+          "question": "Nomophobia",
+          "answer": "Fear of being without your phone",
+          "funFact": "No-mo: no mobile."
+        },
+        {
+          "value": 200,
+          "question": "Triskaidekaphobia",
+          "answer": "Fear of the number 13",
+          "funFact": "Tris = 3, deka = 10."
+        },
+        {
+          "value": 300,
+          "question": "Hippopotomonstrosesquippedaliophobia",
+          "answer": "Fear of long words"
+        },
+        {
+          "value": 400,
+          "question": "Arachibutyrophobia",
+          "answer": "Fear of peanut butter sticking to the roof of your mouth",
+          "funFact": "Arachis is the peanut plant, not spiders."
+        },
+        {
+          "value": 500,
+          "question": "Hexakosioihexekontahexaphobia",
+          "answer": "Fear of the number 666",
+          "funFact": "Greek for 600 + 60 + 6."
+        }
       ]
     },
     {
-      "name": "The Animal Kingdom",
+      "name": "Band & Stage Names",
       "tiles": [
-        { "value": 100, "question": "What is the largest mammal on Earth?", "answer": "The blue whale" },
-        { "value": 200, "question": "What is a baby kangaroo called?", "answer": "A joey" },
-        { "value": 300, "question": "How many hearts does an octopus have?", "answer": "Three" },
-        { "value": 400, "question": "What is the fastest land animal?", "answer": "The cheetah" },
-        { "value": 500, "question": "What is a group of crows called?", "answer": "A murder" }
+        {
+          "value": 100,
+          "question": "The Bee Gees' name stands for this.",
+          "answer": "Brothers Gibb"
+        },
+        {
+          "value": 200,
+          "question": "Lady Gaga took her name from a song by this band.",
+          "answer": "Queen",
+          "funFact": "The song is \"Radio Ga Ga.\""
+        },
+        {
+          "value": 300,
+          "question": "Her name comes from a rum brand, and her sister is named after a cognac.",
+          "answer": "Cardi B",
+          "funFact": "Bacardi, and her sister Hennessy."
+        },
+        {
+          "value": 400,
+          "question": "Fall Out Boy is named after a sidekick on this TV show.",
+          "answer": "The Simpsons"
+        },
+        {
+          "value": 500,
+          "question": "AC/DC took their name from a label on this household appliance.",
+          "answer": "A sewing machine"
+        }
       ]
     }
   ]

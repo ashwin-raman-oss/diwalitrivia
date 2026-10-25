@@ -184,32 +184,37 @@
       ]
     },
     {
-      "name": "Sloppy Seconds",
+      "name": "Name Drop",
       "tiles": [
         {
           "value": 100,
-          "question": "The second man to walk on the moon.",
-          "answer": "Buzz Aldrin"
+          "question": "Chicago wanted to top Paris’s Eiffel Tower at its 1893 World’s Fair. A Pittsburgh bridge engineer delivered a 264-foot steel creation that could carry more than 2000 people. His last name is still on smaller versions at county fairs today.",
+          "answer": "Ferris wheel",
+          "funFact": "George Ferris built it for the World's Columbian Exposition."
         },
         {
           "value": 200,
-          "question": "Kanye interrupted Taylor Swift to say this artist deserved the win.",
-          "answer": "Beyoncé"
+          "question": "This French doctor ironically was opposed to the death penalty but couldn't abolish it. In 1789, he proposed that everyone (rich or poor) be executed in the same quick way. He didn't invent the apparatus but it was named after him anyway. His horrified family changed their last name because of it.",
+          "answer": "Guillotine",
+          "funFact": "Dr. Joseph-Ignace Guillotin. The machine was designed by another doctor, Antoine Louis."
         },
         {
           "value": 300,
-          "question": "This movie was mistakenly announced as Best Picture.",
-          "answer": "La La Land"
+          "question": "This German engineer was frustrated that steam engines wasted up to 90% of their fuel, so he designed one with no spark plug that ignites fuel just by squeezing air until it gets hot enough. One of his early test engines exploded and almost killed him, and one of the first public demos ran on peanut oil. His last name is now on a pump at nearly every gas station.",
+          "answer": "Diesel",
+          "funFact": "Rudolf Diesel."
         },
         {
           "value": 400,
-          "question": "Microsoft's answer to the iPod.",
-          "answer": "Zune"
+          "question": "In the 1840s, France's military bands were in bad shape, and a Belgian instrument maker set out to fix them with a new instrument that had the power of brass and the agility of a woodwind. Rival instrument makers felt so threatened that they banded together to challenge his patent, but he won it in 1846, and the instrument still carries his name.",
+          "answer": "Saxophone",
+          "funFact": "Adolphe Sax."
         },
         {
           "value": 500,
-          "question": "He filed a telephone patent the same day as Alexander Graham Bell.",
-          "answer": "Elisha Gray"
+          "question": "In 1880, an English land agent in Ireland tried to evict his tenants. His workers walked off and the local shops refused to serve him. His last name became the word for what the town did to him.",
+          "answer": "Boycott",
+          "funFact": "Captain Charles Boycott, County Mayo."
         }
       ]
     },

@@ -35,7 +35,7 @@ export default function AnswerScreen(props: Props) {
 
       <main className={`clue__body${image ? '' : ' clue__body--text'}`}>
         <Picture src={image} alt="Answer reveal" />
-        <p className="clue__answer">{tile.answer}</p>
+        {!(tile.imageOnly && tile.answerImage) && <p className="clue__answer">{tile.answer}</p>}
         {tile.funFact && <p className="clue__fact">{tile.funFact}</p>}
         {showAccept && tile.accept && (
           <p className="clue__accept">

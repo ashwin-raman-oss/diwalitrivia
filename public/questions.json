@@ -9,7 +9,8 @@
           "question": "Name the movie.",
           "answer": "Titanic",
           "questionImage": "/images/movies-100-q.png",
-          "answerImage": "/images/movies-100-a.png"
+          "answerImage": "/images/movies-100-a.png",
+          "imageOnly": true
         },
         {
           "value": 200,
@@ -17,7 +18,8 @@
           "answer": "The Lord of the Rings",
           "accept": "Accept any Lord of the Rings film",
           "questionImage": "/images/movies-200-q.png",
-          "answerImage": "/images/movies-200-a.png"
+          "answerImage": "/images/movies-200-a.png",
+          "imageOnly": true
         },
         {
           "value": 300,
@@ -25,14 +27,16 @@
           "answer": "Harry Potter",
           "accept": "Accept any Harry Potter film",
           "questionImage": "/images/movies-300-q.png",
-          "answerImage": "/images/movies-300-a.png"
+          "answerImage": "/images/movies-300-a.png",
+          "imageOnly": true
         },
         {
           "value": 400,
           "question": "Name the movie.",
           "answer": "The Shining",
           "questionImage": "/images/movies-400-q.png",
-          "answerImage": "/images/movies-400-a.png"
+          "answerImage": "/images/movies-400-a.png",
+          "imageOnly": true
         },
         {
           "value": 500,
@@ -40,7 +44,8 @@
           "answer": "Batman v Superman: Dawn of Justice",
           "accept": "Accept Batman v Superman",
           "questionImage": "/images/movies-500-q.png",
-          "answerImage": "/images/movies-500-a.png"
+          "answerImage": "/images/movies-500-a.png",
+          "imageOnly": true
         }
       ]
     },
@@ -54,7 +59,8 @@
           "questionImage": "/images/absolut-100-q.png",
           "answerImage": "/images/absolut-100-a.png",
           "accept": "Accept New York",
-          "funFact": "Central Park forms the bottle."
+          "funFact": "Central Park forms the bottle.",
+          "imageOnly": true
         },
         {
           "value": 200,
@@ -63,7 +69,8 @@
           "questionImage": "/images/absolut-200-q.png",
           "answerImage": "/images/absolut-200-a.png",
           "accept": "Accept Rio",
-          "funFact": "The bottle is a carnival headdress."
+          "funFact": "The bottle is a carnival headdress.",
+          "imageOnly": true
         },
         {
           "value": 300,
@@ -71,7 +78,8 @@
           "answer": "Bangkok",
           "questionImage": "/images/absolut-300-q.png",
           "answerImage": "/images/absolut-300-a.png",
-          "funFact": "A floating market forms the bottle."
+          "funFact": "A floating market forms the bottle.",
+          "imageOnly": true
         },
         {
           "value": 400,
@@ -79,7 +87,8 @@
           "answer": "Boston",
           "questionImage": "/images/absolut-400-q.png",
           "answerImage": "/images/absolut-400-a.png",
-          "funFact": "Crates in the harbor: the Boston Tea Party."
+          "funFact": "Crates in the harbor: the Boston Tea Party.",
+          "imageOnly": true
         },
         {
           "value": 500,
@@ -88,7 +97,8 @@
           "questionImage": "/images/absolut-500-q.png",
           "answerImage": "/images/absolut-500-a.png",
           "accept": "Do not accept Zurich",
-          "funFact": "Geneva is the heart of Swiss watchmaking."
+          "funFact": "Geneva is the heart of Swiss watchmaking.",
+          "imageOnly": true
         }
       ]
     },
@@ -131,7 +141,8 @@
           "answer": "Starbucks",
           "questionImage": "/images/logos-100-q.png",
           "answerImage": "/images/logos-100-a.png",
-          "funFact": "The original 1971 logo: a two-tailed siren."
+          "funFact": "The original 1971 logo: a two-tailed siren.",
+          "imageOnly": true
         },
         {
           "value": 200,
@@ -139,7 +150,8 @@
           "answer": "UPS",
           "questionImage": "/images/logos-200-q.png",
           "answerImage": "/images/logos-200-a.png",
-          "funFact": "The 1916 eagle is carrying a package. The shield is still in today's logo."
+          "funFact": "The 1916 eagle is carrying a package. The shield is still in today's logo.",
+          "imageOnly": true
         },
         {
           "value": 300,
@@ -148,7 +160,8 @@
           "questionImage": "/images/logos-300-q.png",
           "answerImage": "/images/logos-300-a.png",
           "funFact": "The Dassler brothers split in 1948: Adi founded Adidas, Rudolf founded Puma.",
-          "accept": "Accept Adidas or Puma"
+          "accept": "Accept Adidas or Puma",
+          "imageOnly": true
         },
         {
           "value": 400,
@@ -156,7 +169,8 @@
           "answer": "Pepsi",
           "questionImage": "/images/logos-400-q.png",
           "answerImage": "/images/logos-400-a.png",
-          "funFact": "Pharmacist Caleb Bradham called it Brad's Drink in 1893. It became Pepsi-Cola in 1898."
+          "funFact": "Pharmacist Caleb Bradham called it Brad's Drink in 1893. It became Pepsi-Cola in 1898.",
+          "imageOnly": true
         },
         {
           "value": 500,
@@ -164,7 +178,8 @@
           "answer": "BMW",
           "questionImage": "/images/logos-500-q.png",
           "answerImage": "/images/logos-500-a.png",
-          "funFact": "BMW grew out of Rapp Motorenwerke, founded in Munich in 1913."
+          "funFact": "BMW grew out of Rapp Motorenwerke, founded in Munich in 1913.",
+          "imageOnly": true
         }
       ]
     },
@@ -241,7 +256,8 @@
           "question": "What happened here?",
           "answer": "COVID panic buying",
           "questionImage": "/images/graphs-100-q.png",
-          "funFact": "Searches for toilet paper, March 2020."
+          "funFact": "Searches for toilet paper, March 2020.",
+          "imageOnly": true
         },
         {
           "value": 200,
@@ -250,7 +266,8 @@
           "questionImage": "/images/graphs-200-q.png",
           "answerImage": "/images/graphs-200-a.png",
           "accept": "Accept the GameStop short squeeze",
-          "funFact": "About $17 at the start of January to a $347.51 close on Jan 27, 2021."
+          "funFact": "About $17 at the start of January to a $347.51 close on Jan 27, 2021.",
+          "imageOnly": true
         },
         {
           "value": 300,
@@ -258,7 +275,8 @@
           "answer": "The Ice Bucket Challenge",
           "questionImage": "/images/graphs-300-q.png",
           "answerImage": "/images/graphs-300-a.png",
-          "funFact": "$100.9M in one month of 2014, vs. $2.8M the year before."
+          "funFact": "$100.9M in one month of 2014, vs. $2.8M the year before.",
+          "imageOnly": true
         },
         {
           "value": 400,
@@ -267,7 +285,8 @@
           "questionImage": "/images/graphs-400-q.png",
           "answerImage": "/images/graphs-400-a.png",
           "accept": "Accept Jordan retiring",
-          "funFact": "From 62-20 and a sixth title to 13-37 the next season."
+          "funFact": "From 62-20 and a sixth title to 13-37 the next season.",
+          "imageOnly": true
         },
         {
           "value": 500,
@@ -276,7 +295,8 @@
           "questionImage": "/images/graphs-500-q.png",
           "answerImage": "/images/graphs-500-a.png",
           "accept": "Accept Amazon Echo or Alexa",
-          "funFact": "6,053 baby girls named Alexa in 2015. Just 243 in 2025."
+          "funFact": "6,053 baby girls named Alexa in 2015. Just 243 in 2025.",
+          "imageOnly": true
         }
       ]
     },
@@ -288,28 +308,32 @@
           "question": "Name the empire at its peak.",
           "answer": "Roman Empire",
           "questionImage": "/images/empires-100-q.png",
-          "answerImage": "/images/empires-100-a.png"
+          "answerImage": "/images/empires-100-a.png",
+          "imageOnly": true
         },
         {
           "value": 200,
           "question": "Name the empire at its peak.",
           "answer": "Inca Empire",
           "questionImage": "/images/empires-200-q.png",
-          "answerImage": "/images/empires-200-a.png"
+          "answerImage": "/images/empires-200-a.png",
+          "imageOnly": true
         },
         {
           "value": 300,
           "question": "Name the empire at its peak.",
           "answer": "Mongol Empire",
           "questionImage": "/images/empires-300-q.png",
-          "answerImage": "/images/empires-300-a.png"
+          "answerImage": "/images/empires-300-a.png",
+          "imageOnly": true
         },
         {
           "value": 400,
           "question": "Name the empire at its peak.",
           "answer": "Ottoman Empire",
           "questionImage": "/images/empires-400-q.png",
-          "answerImage": "/images/empires-400-a.png"
+          "answerImage": "/images/empires-400-a.png",
+          "imageOnly": true
         },
         {
           "value": 500,
@@ -317,7 +341,8 @@
           "answer": "Alexander the Great's empire",
           "questionImage": "/images/empires-500-q.png",
           "answerImage": "/images/empires-500-a.png",
-          "accept": "Accept Macedonian Empire. Persia is a close miss: Alexander had just conquered it."
+          "accept": "Accept Macedonian Empire. Persia is a close miss: Alexander had just conquered it.",
+          "imageOnly": true
         }
       ]
     },

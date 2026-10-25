@@ -6,6 +6,8 @@ export interface TileData {
   answerImage?: string;
   accept?: string;
   funFact?: string;
+  /** Picture rounds: the images carry the clue and the reveal, so the question and answer text are hidden. */
+  imageOnly?: boolean;
 }
 
 export interface Category {

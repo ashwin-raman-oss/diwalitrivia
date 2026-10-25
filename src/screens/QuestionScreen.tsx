@@ -35,12 +35,14 @@ export default function QuestionScreen({ category, tile, answeringTeam, onReveal
 
       <main className={`clue__body${tile.questionImage ? '' : ' clue__body--text'}`}>
         <Picture src={tile.questionImage} alt="Question clue" />
+        {!(tile.imageOnly && tile.questionImage) && (
         <p
           className="clue__question"
           style={tile.questionImage ? undefined : { fontSize: textOnlySize(tile.question) }}
         >
           {tile.question}
         </p>
+        )}
       </main>
 
       <footer className="clue__actions">

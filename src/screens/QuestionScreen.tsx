@@ -9,6 +9,15 @@ interface Props {
   onBack: () => void;
 }
 
+/** Text-only clues shrink with length so long, story-style questions still fit on one screen. */
+function textOnlySize(text: string): string {
+  const n = text.length;
+  if (n > 300) return '6vh';
+  if (n > 200) return '7vh';
+  if (n > 120) return '8vh';
+  return '9vh';
+}
+
 export default function QuestionScreen({ category, tile, answeringTeam, onReveal, onBack }: Props) {
   return (
     <div className="screen clue">
@@ -26,7 +35,12 @@ export default function QuestionScreen({ category, tile, answeringTeam, onReveal
 
       <main className={`clue__body${tile.questionImage ? '' : ' clue__body--text'}`}>
         <Picture src={tile.questionImage} alt="Question clue" />
-        <p className="clue__question">{tile.question}</p>
+        <p
+          className="clue__question"
+          style={tile.questionImage ? undefined : { fontSize: textOnlySize(tile.question) }}
+        >
+          {tile.question}
+        </p>
       </main>
 
       <footer className="clue__actions">

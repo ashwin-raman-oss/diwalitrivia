@@ -2,7 +2,7 @@
   "title": "Trivia Night",
   "categories": [
     {
-      "name": "Badly Explained Movies",
+      "name": "Lost the Plot",
       "tiles": [
         {
           "value": 100,
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "name": "Absolut Cities",
+      "name": "City Spirits",
       "tiles": [
         {
           "value": 100,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "name": "Hold the ___",
+      "name": "Secret Sauce",
       "tiles": [
         {
           "value": 100,
@@ -141,7 +141,7 @@
       ]
     },
     {
-      "name": "Old Logos",
+      "name": "First Impressions",
       "tiles": [
         {
           "value": 100,
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "name": "Memoir Titles",
+      "name": "Tell All",
       "tiles": [
         {
           "value": 100,
@@ -267,7 +267,7 @@
       ]
     },
     {
-      "name": "Graphs",
+      "name": "Peaks & Valleys",
       "tiles": [
         {
           "value": 100,
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "name": "Empire Maps",
+      "name": "Map Quest",
       "tiles": [
         {
           "value": 100,
@@ -366,7 +366,7 @@
       ]
     },
     {
-      "name": "Name That Phobia",
+      "name": "Fear Factor",
       "tiles": [
         {
           "value": 100,
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "name": "Band & Stage Names",
+      "name": "Alter Egos",
       "tiles": [
         {
           "value": 100,

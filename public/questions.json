@@ -6,31 +6,41 @@
       "tiles": [
         {
           "value": 100,
-          "question": "Everyone tries the ice bucket challenge.",
-          "answer": "Titanic"
+          "question": "Name the movie.",
+          "answer": "Titanic",
+          "questionImage": "/images/movies-100-q.png",
+          "answerImage": "/images/movies-100-a.png"
         },
         {
           "value": 200,
-          "question": "A group spends 9 hours returning jewelry.",
+          "question": "Name the movie.",
           "answer": "The Lord of the Rings",
-          "accept": "Accept any Lord of the Rings film"
+          "accept": "Accept any Lord of the Rings film",
+          "questionImage": "/images/movies-200-q.png",
+          "answerImage": "/images/movies-200-a.png"
         },
         {
           "value": 300,
-          "question": "A boy spends 7 years being the third wheel.",
+          "question": "Name the movie.",
           "answer": "Harry Potter",
-          "accept": "Accept any Harry Potter film"
+          "accept": "Accept any Harry Potter film",
+          "questionImage": "/images/movies-300-q.png",
+          "answerImage": "/images/movies-300-a.png"
         },
         {
           "value": 400,
-          "question": "A family's first Airbnb experience goes very wrong.",
-          "answer": "The Shining"
+          "question": "Name the movie.",
+          "answer": "The Shining",
+          "questionImage": "/images/movies-400-q.png",
+          "answerImage": "/images/movies-400-a.png"
         },
         {
           "value": 500,
-          "question": "A paranoid billionaire is afraid of an immigrant.",
+          "question": "Name the movie.",
           "answer": "Batman v Superman: Dawn of Justice",
-          "accept": "Accept Batman v Superman"
+          "accept": "Accept Batman v Superman",
+          "questionImage": "/images/movies-500-q.png",
+          "answerImage": "/images/movies-500-a.png"
         }
       ]
     },

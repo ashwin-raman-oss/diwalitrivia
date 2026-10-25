@@ -220,31 +220,36 @@
           "value": 100,
           "question": "Friends, Lovers, and the Big Terrible Thing",
           "answer": "Matthew Perry",
-          "answerImage": "/images/memoir-100-a.png"
+          "answerImage": "/images/memoir-100-a.png",
+          "imageOnly": true
         },
         {
           "value": 200,
           "question": "The Answer Is...: Reflections on My Life",
           "answer": "Alex Trebek",
-          "answerImage": "/images/memoir-200-a.png"
+          "answerImage": "/images/memoir-200-a.png",
+          "imageOnly": true
         },
         {
           "value": 300,
           "question": "Beyond the Wand",
           "answer": "Tom Felton",
-          "answerImage": "/images/memoir-300-a.png"
+          "answerImage": "/images/memoir-300-a.png",
+          "imageOnly": true
         },
         {
           "value": 400,
           "question": "Beneath the Surface",
           "answer": "Michael Phelps",
-          "answerImage": "/images/memoir-400-a.png"
+          "answerImage": "/images/memoir-400-a.png",
+          "imageOnly": true
         },
         {
           "value": 500,
           "question": "Losing My Virginity",
           "answer": "Richard Branson",
-          "answerImage": "/images/memoir-500-a.png"
+          "answerImage": "/images/memoir-500-a.png",
+          "imageOnly": true
         }
       ]
     },

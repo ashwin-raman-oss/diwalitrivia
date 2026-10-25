@@ -362,30 +362,28 @@
       "tiles": [
         {
           "value": 100,
-          "question": "The Bee Gees' name stands for this.",
-          "answer": "Brothers Gibb"
+          "question": "This rapper's sister's name was Hennessy so all her friends used to scream \"Bacardi\" when she performed. She shortened that to come up with the name that she is well-known now.",
+          "answer": "Cardi B"
         },
         {
           "value": 200,
-          "question": "Lady Gaga took her name from a song by this band.",
-          "answer": "Queen",
-          "funFact": "The song is \"Radio Ga Ga.\""
+          "question": "Born Peter Gene Hernandez, this musician wanted an \"other worldly\" last name that sounded exotic and removed any ethnic pigeonholing tied to his Puerto Rican surname.",
+          "answer": "Bruno Mars"
         },
         {
           "value": 300,
-          "question": "Her name comes from a rum brand, and her sister is named after a cognac.",
-          "answer": "Cardi B",
-          "funFact": "Bacardi, and her sister Hennessy."
+          "question": "Born Stefani Jianne Angelina Germanotta, this artist's stage name inspiration happened when producer Rob Fusari's phone autocorrected the title of a popular Queen song \"Radio _______\".",
+          "answer": "Lady Gaga"
         },
         {
           "value": 400,
-          "question": "Fall Out Boy is named after a sidekick on this TV show.",
-          "answer": "The Simpsons"
+          "question": "This artist picked his stage name after looking at a childhood photo of himself in an animal costume that he hated and was forced to wear",
+          "answer": "Bad Bunny"
         },
         {
           "value": 500,
-          "question": "AC/DC took their name from a label on this household appliance.",
-          "answer": "A sewing machine"
+          "question": "This band originated from Wilmette, a Chicago suburb, in 2001 without an original name and had placeholder names like \"Pete's new band\". During their second show, they asked the crowd to give them ideas for a permanent name. Someone yelled out \"____ ____ ____\" as a joke referencing the name of Radioactive Man's sidekick from the Simpsons TV show which stuck.",
+          "answer": "Fall Out Boy"
         }
       ]
     }

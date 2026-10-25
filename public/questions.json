@@ -259,10 +259,11 @@
         {
           "value": 100,
           "question": "What happened here?",
-          "answer": "COVID panic buying",
+          "answer": "Stocking up on toilet paper during COVID",
           "questionImage": "/images/graphs-100-q.png",
           "funFact": "Searches for toilet paper, March 2020.",
-          "imageOnly": true
+          "imageOnly": true,
+          "accept": "Accept toilet paper hoarding or panic buying"
         },
         {
           "value": 200,
